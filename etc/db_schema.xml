@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="test_job" resource="default" engine="innodb" comment="Test Job">
+      <column xsi:type="int" name="job_id" unsigned="true" nullable="false" padding="10" identity="true" comment="Entity Id"/>
+      <column xsi:type="varchar" name="fullname" nullable="false" length="255" comment="Name"/>
+      <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Email"/>
+      <column xsi:type="varchar" name="contactno" nullable="false" length="255" comment="Contact Number"/>
+      <column xsi:type="varchar" name="resume" nullable="false" length="255" comment="Resume" />
+      <column xsi:type="timestamp" name="create_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Create Date"/>
+      <constraint xsi:type="primary" referenceId="PRIMARY">
+          <column name="job_id"/>
+      </constraint>
+   </table>
+</schema>

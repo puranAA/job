@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="test_job::core" title="Job" module="Test_Job" sortOrder="90" resource="Test_Job::sample"/>
+        <add id="test_job::test" title="Resume" module="Test_Job" sortOrder="10" parent="test_job::core" action="test_job/items/" resource="Test_Job::items"/>
+    </menu>
+</config>
